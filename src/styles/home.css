@@ -1,0 +1,36 @@
+#home {
+    min-height: calc(100vh - 91px);
+    display: flex;
+}
+#cta {
+    width: 35%;
+    flex-direction: column;
+    display: flex;
+    gap: 28px;
+    margin-top: 5%; 
+
+}
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+}
+#cta .title span {
+    color: #e9a209;
+}
+#cta .description{
+    font-size: 1.2rem;
+}
+#cta-buttons  {
+    display: flex;
+    gap: 24px;
+}
+#phone-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    border-radius:12px;
+}

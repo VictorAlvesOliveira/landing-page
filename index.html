@@ -1,52 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>landing page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav id="navbar">
-            <i class="fa-solid fa-burger">Food</i>
-            <ul id="nav-list">
-                <li class="nav-item">
-                   <a href="#home">inicio</a>
-                </li>
-                <li class="nav-item">
-                     <a href="#menu">Cardapio</a>
-                </li>
-                <li class="nav-item">
-                     <a href="#testmoniasl">Avaliaçaões</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                peça aqui
-            </button>
-            <button id="mobile-button" >
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-        <div id="mobile-menu">
-            <ul id="mobile-nav-list">
-                <li class="nav-item">
-                   <a href="#home">inicio</a>
-                </li>
-                <li class="nav-item">
-                     <a href="#menu">Cardapio</a>
-                </li>
-                <li class="nav-item">
-                     <a href="#testmoniasl">Avaliaçaões</a>
-                </li>
-            </ul>
-                 <button class="btn-default">
-                peça aqui
-            </button>
-        </div>
+      <nav id="nav-bar">
+        <i class="fa-solid fa-burger" id="nav-logo">Food</i>
+
+        <ul id="nav-list">
+          <li class="nav-item active">
+            <a href="#home">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardapio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">peça aqui</button>
+        <button id="mobile-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu">
+        <ul id="mobile-nav-list">
+          <li class="nav-item">
+            <a href="#home">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardapio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliaçaões</a>
+          </li>
+        </ul>
+        <button class="btn-default">peça aqui</button>
+      </div>
     </header>
-    
-</body>
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            o sabor que vai até
+            <span>você</span>
+          </h1>
+
+          <p class="description">
+            Sabor de verdade, preparado com paixão! Aqui você encontra pratos
+            irresistíveis, feitos com ingredientes frescos e muito cuidado. Peça
+            agora e surpreenda seu paladar sem sair de casa.
+          </p>
+
+          <div id="cta-buttons">
+            <a href="#" class="btn-default"> ver cardapio </a>
+            <a href="tel:+5555555555" id="phone-button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+                (38)999000-320
+            </a>
+          </div>
+          <div class="social-midia-buttons">
+            <a href="">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div id="banner">
+          <img src="src/img/hero.png" alt="imagens de comida" />
+        </div>
+      </section>
+    </main>
+    <script src="src/javascript/script.js"></script>
+  </body>
 </html>
